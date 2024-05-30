@@ -1,0 +1,673 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Both</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'Both/css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'Both/css/style_index.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'Both/css/responsive.css' %}" rel="stylesheet" />
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section ">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              
+                <img src="../../static/Both/img/logo transparent.png" alt="" class="" />
+              
+
+              Both
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'index' %}">ACCUEIL <span class="sr-only">(current)</span></a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'login' %}"> CONNEXION </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'inscription' %}">INSCRIPTION</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="slider_img-box">
+                       
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h1>
+                            Both
+                          </h1>
+                          <p>
+                            Bienvenue sur notre site de rencontre en ligne, où nous croyons fermement que chacun mérite de trouver son âme-sœur. 
+                            Notre plateforme est conçue pour vous aider à rencontrer des personnes partageant vos valeurs et vos aspirations. 
+                            Grâce à nos outils de recherche avancés et à notre interface conviviale, trouver l'amour véritable n'a jamais été aussi simple.
+                             Rejoignez-nous dès aujourd'hui et faites le premier pas vers une relation épanouissante.
+                          </p>
+                          <div class="d-flex">
+                            
+                            <a href="{% url 'inscription' %}" class="slider-btn2">
+                              CREER UN COMPTE
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+            <div class="carousel-item">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="slider_img-box">
+                        <div>
+                          <img src="images/watch.png" alt="" class="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h1>
+                            Stylish watches
+                          </h1>
+                          <p>
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
+                          </p>
+                          <div class="d-flex">
+                            <a href="" class="slider-btn1 mr-3">
+                              Read More
+                            </a>
+                            <a href="" class="slider-btn2">
+                              Contact Us
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="slider_img-box">
+                        <div>
+                          <img src="images/watch.png" alt="" class="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h1 class="">
+                            Stylish watches
+                          </h1>
+                          <p>
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
+                          </p>
+                          <div class="d-flex">
+                            <a href="" class="slider-btn1 mr-3">
+                              Read More
+                            </a>
+                            <a href="" class="slider-btn2">
+                              Contact Us
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          -->
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+  <div class="bg">
+
+    <!-- about section -->
+    <!--
+       <section class="about_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 offset-md-2">
+            <div class="about_detail-box">
+              <h3 class="custom_heading ">
+                About our watch
+              </h3>
+              <p class="">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of
+                letters, as opposed to using 'Content here, content here', making it
+              </p>
+              <div>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about_img-box">
+              <img src="images/about.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 offset-md-2">
+            <div class="about_detail-box">
+              <h3 class="custom_heading ">
+                About our watch
+              </h3>
+              <p class="">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of
+                letters, as opposed to using 'Content here, content here', making it
+              </p>
+              <div>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about_img-box">
+              <img src="images/about.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- end about section -->
+
+    <!-- brand section -->
+    <!--
+    <section class="brand_section layout_padding2">
+      <div class="container">
+        <div class="brand_heading">
+          <h3 class="custom_heading">
+            Our watch brands
+          </h3>
+          <p class="font-weight-bold">
+            It is a long established fact that a reader will be distracted by the readable content of a page
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid brand_item-container">
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-1">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 40 </span>
+            </h5>
+            <h6 class="">
+              best watch
+            </h6>
+          </div>
+        </div>
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-2">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 50 </span>
+            </h5>
+            <h6 class="">
+              best watch
+            </h6>
+          </div>
+        </div>
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-3">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 60 </span>
+            </h5>
+            <h6 class="">
+              best watch
+            </h6>
+          </div>
+        </div>
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-4">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 70 </span>
+            </h5>
+            <h6 class="">
+              best watch
+            </h6>
+          </div>
+        </div>
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-5">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 80 </span>
+            </h5>
+            <h6 class="">
+              best watch
+            </h6>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    -->
+    
+
+
+    <!-- end brand section -->
+
+    <!-- why section -->
+    <section class="why_section layout_padding">
+      <div class="container">
+        <h3 class="custom_heading">
+          Pourquoi choisir Both ?
+        </h3>
+        <p class="font-weight-bold">
+          It is a long established fact that a reader will be distracted by the readable content of a page
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img_box">
+              <img src="../../static/Both/img/coeur.png" alt="">
+            </div>
+            <div class="detail_box">
+              <h5>
+                Compatibilité Optimale
+              </h5>
+              <p>
+                Notre algorithme de correspondance avancé vous aide à trouver des partenaires 
+                qui partagent vos valeurs et aspirations,
+                 maximisant vos chances de rencontrer votre âme-sœur.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img_box">
+              <img src="../../static/Both/img/globe.png" alt="">
+            </div>
+            <div class="detail_box">
+              <h5>
+                Interface Conviviale
+              </h5>
+              <p>
+                Naviguez facilement grâce à notre plateforme 
+                 et ergonomique, conçue pour rendre votre 
+                expérience de rencontre en ligne agréable et sans tracas.              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img_box">
+              <img src="../../static/Both/img/lock.png" alt="">
+            </div>
+            <div class="detail_box">
+              <h5>
+                Sécurité et Confidentialité
+              </h5>
+              <p>
+                Nous accordons une importance primordiale à la protection de vos données 
+                personnelles et à la sécurité de vos interactions en ligne.              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img_box">
+              <img src="../../static/Both/img/handshake.png" alt="">
+            </div>
+            <div class="detail_box">
+              <h5>
+                Communauté Engagée
+              </h5>
+              <p>
+                Rejoignez une communauté active et bienveillante, composée de personnes
+                 sérieuses et sincères, toutes à la recherche d'une relation authentique et durable.              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- end why section -->
+  </div>
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <h3 class="custom_heading">
+        TEMOIGNAGES
+      </h3>
+      <p class="font-weight-bold">
+        Découvrez ce que nos utilisateurs disent de nous à travers leurs témoignages authentiques et inspirants.      </p>
+    </div>
+    <div class="container"></div>
+    <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="detail_box">
+                  <div class="img_box">
+                    <img src="../../static/Both/img/client.jpg" alt="">
+                  </div>
+                  <div class="name_box">
+                    <h5>
+                      Malaika Mwema (Kenya) 
+                    </h5>
+                    <h6>
+                      Many Variations
+                    </h6>
+                  </div>
+                </div>
+                <div class="detail_text">
+                  <p>
+                    "Je suis reconnaissante d'avoir trouvé ce site. Cela m'a permis de rencontrer des personnes formidables et de nouer des amitiés durables. 
+                    Même si je n'ai pas encore trouvé mon âme-sœur, je reste optimiste grâce à cette communauté chaleureuse."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="detail_box">
+                  <div class="img_box">
+                    <img src="../../static/Both/img/client.jpg" alt="">
+                  </div>
+                  <div class="name_box">
+                    <h5>
+                      Félicité Kpodé (Bénin)
+                    </h5>
+                    <h6>
+                      Many Variations
+                    </h6>
+                  </div>
+                </div>
+                <div class="detail_text">
+                  <p>
+                    "Je ne pensais pas pouvoir trouver l'amour en ligne, mais ce site m'a prouvé le contraire.
+                     J'ai rencontré quelqu'un de spécial ici, et nous construisons une relation solide jour après jour.
+                      Merci à Both pour avoir rendu cela possible !  
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="detail_box">
+                  <div class="img_box">
+                    <img src="../../static/Both/img/client.jpg"alt="">
+                  </div>
+                  <div class="name_box">
+                    <h5>
+                      Sébastien Hounkpatin (Bénin)
+                    </h5>
+                    <h6>
+                      Many Variations
+                    </h6>
+                  </div>
+                </div>
+                <div class="detail_text">
+                  <p>
+                    "Je cherchais juste à élargir mon cercle social, mais je suis tombé sur bien plus que ça sur ce site.
+                    J'ai rencontré des personnes incroyables, dont une avec qui je partage une connexion vraiment spéciale.
+                    C'est une expérience que je recommande à tout le monde."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="detail_box">
+                <div class="img_box">
+                  <img src="../../static/Both/img/client.jpg" alt="">
+                </div>
+                <div class="name_box">
+                  <h5>
+                    Aïcha Kamara (Sénégal) 
+                  </h5>
+                  <h6>
+                    Many Variations
+                  </h6>
+                </div>
+              </div>
+              <div class="detail_text">
+                <p>
+                  "Je suis tombée sur ce site par hasard, mais cela a changé ma vie.
+                   J'ai trouvé l'amour de ma vie ici, quelqu'un qui partage mes valeurs et mes rêves.
+                   Merci pour cette plateforme incroyable !"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <h2 class="custom_heading text-center">
+      CONTACTEZ-NOUS
+    </h2>
+    <div class="container mt-5 pt-5">
+      <form action="">
+        <div>
+          <input type="text" placeholder="NOM">
+        </div>
+        <div>
+          <input type="email" placeholder="EMAIL">
+        </div>
+        <div>
+          <input type="text" placeholder="NUMERO DE TELEPHONE">
+        </div>
+        <div>
+          <input type="text" class="message-box" placeholder="MESSAGE">
+        </div>
+        <div class="d-flex justify-content-center mt-5 pt-5">
+          <button>
+            ENVOYER
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="info_items">
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Bénin,Calavi,Zogbadjè
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-2">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                +229 54218356
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                groupe3@gmail.com
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      © 2024 Tous droits réservés
+      <a href="https://html.design/">Both</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="../../static/Both/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../../static/Both/js/bootstrap.js"></script>
+</body>
+
+</html>

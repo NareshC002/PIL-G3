@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up to Both</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <h1>Inscription</h1>
+        <div class="container">
+            <div class="sign-up-content">
+                <form method="POST" class="signup-form">
+                    <div id="logo">
+                        <img src="logo.png" alt=""  >
+
+                    </div>
+                    <h2 class="form-title">Terminez votre inscription😍</h2>
+                  
+                    <div class="form-textbox">
+                        <label for="name">Nom</label>
+                        <input type="name" name="name" id="name" />
+                    </div>
+                    <div class="form-textbox">
+                        <label for="firstname">Prénoms</label>
+                        <input type="name" name="firstname" id="firstname" />
+                    </div>
+                    <div class="form-textbox">
+                        <label for="date">Date de naissance</label>
+                        <input type="date" name="date" id="date" />
+                    </div>
+                    <div class="form-textbox">
+                        <label for="city">Ville</label>
+                        <input type="text" name="city" id="city" />
+                    </div>
+                    <div class="form-textbox">
+                        <label for="phone_number">Téléphone</label>
+                        <input type="tel" name="phone_number" id="phone_number" />
+                    </div>
+                    
+                    <div class="form-radio">
+                        <input type="radio" name="sex" value="masculin" id="masculin"  />
+                        <label for="masculin">Masculin</label>
+
+                        <input type="radio" name="sex" value="feminin" id="feminin" />
+                        <label for="feminin">Féminin</label>
+
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>J'accepte toutes les clauses des <a href="#" class="term-service">Conditions d'utilisations</a></label>
+                    </div>
+
+                    <div class="form-textbox">
+                        
+                        <input type="submit" name="submit" id="submit" class="submit" value="Créer un compte" />
+                    </div>
+                </form>
+
+                <p class="loginhere">
+                    Vous avez déja un compte ?<a href="connexion.html" class="loginhere-link"> Connectez-vous</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
